@@ -1,0 +1,16 @@
+.fcc-btn {
+    
+    background-color: #9c1e2f;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    width: 25%;
+    align-content: end;
+    float: right;
+    
+  }
+  .right{
+    float: right;
+  }
+  

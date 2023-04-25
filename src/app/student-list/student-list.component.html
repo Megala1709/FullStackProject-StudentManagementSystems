@@ -1,0 +1,89 @@
+<div class="bg-img">
+    <div class="right">
+        <br>
+        <br>
+    <a class="fcc-btn" href="/home" >Back</a>  <br><br>
+    </div>
+
+    
+<h1 style=font-style:italic>Student List</h1>
+<tr *ngIf="students.length!=0">
+<button (click) = "confirmDeleteAll()" class = "btn btn-danger"  style="margin-right: 10px "> Delete All</button>
+<br><br>
+<div class="list row">
+    <div class="col-md-8">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholdessr="Search "
+          [(ngModel)]="studentName"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="searchByName()"
+          >
+            Search
+          </button>
+          
+        </div>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Fetch Student Standard</button>
+        <div class="dropdown-content">
+          <a class="btn btn-outline-primary" type="button" (click)="fetchStdStandard6()">
+            6th Standard</a>
+            <a class="btn btn-outline-primary" type="button" (click)="fetchStdStandard7()">
+              7th Standard</a>
+              <a class="btn btn-outline-primary" type="button" (click)="fetchStdStandard8()">
+                8th Standard</a>
+                <a class="btn btn-outline-primary" type="button" (click)="fetchStdStandard9()">
+                  9th Standard</a>
+                  <a class="btn btn-outline-primary" type="button" (click)="fetchStdStandard10()">
+                    10th Standard</a>
+                    <a class="btn btn-outline-primary" type="button" (click)="fetchStdStandard11()">
+                      11th Standard</a>
+                      <a class="btn btn-outline-primary" type="button" (click)="fetchStdStandard12()">
+                        12th Standard</a>
+                      
+        </div>
+      </div>
+    </div>
+    
+
+<tr><br>
+<table class = "table table-striped">
+
+    <thead class="thead-dark">
+        <tr class="table-dark">
+            <th> StudentName</th>
+            <th> Id</th>
+            <th> Standard</th>
+            <th> DOB </th>
+            <th> ParentName </th>
+            <th> ParentPhoneNo </th>
+            <th> StudentAttendence </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let student of students" >
+            <td > {{student.studentName}} </td>
+            <td> {{student.id}} </td>
+            <td>{{student.standard}} </td>
+            <td>{{student.dob}}</td>
+            <td>{{student.parentName}}</td>
+            <td>{{student.parentPhoneNo}}</td>
+            <td> {{student.stdAttendence}}</td>
+            
+            <td>
+                <button (click) = "updateStudent(student.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "confirmDelete(student)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "studentDetails(student.id)" class = "btn btn-secondary" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+         </tbody>
+</table>
+</div>

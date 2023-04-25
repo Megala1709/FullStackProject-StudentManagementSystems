@@ -1,0 +1,37 @@
+<div class="bg-img">
+    <div class="col-md-6 offset-md-3">
+        <h3> Update Student </h3>
+        <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+                <label> 
+                    standard</label>
+                <input type="text" class ="form-control" id = "standard"
+                    [(ngModel)] = "student.standard" placeholder="Enter Standard"name = "standard">
+            </div>
+      
+            <div class="form-group">
+                <label>dob</label>
+                <input type="text" class ="form-control" id = "dob"
+                    [(ngModel)] = "student.dob"placeholder="Enter dob" name = "dob">
+            </div>
+    
+        
+            <div class="form-group">
+                <label> parentPhoneNo</label>
+                <input type="text" class ="form-control" id = "parentPhoneNo"
+                    [(ngModel)] = "student.parentPhoneNo"placeholder="Enter ParentPhoneNo" name = "parentPhoneNo">
+            </div>
+    
+            <div class="form-group">
+                <label> studentAttendence</label>
+                <input type="text" class ="form-control" id = "stdAtd"
+                    [(ngModel)] = "student.stdAttendence" placeholder="Enter Student Attendence
+                "name = "stdAtd">
+            </div>
+    
+            <button class = "btn btn-success" type ="submit" onclick="alert('Updated Sucessfully!!!')">Submit</button>
+    
+        </form>
+        </div> 
+    </div>

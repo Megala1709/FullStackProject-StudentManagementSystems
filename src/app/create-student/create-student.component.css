@@ -1,0 +1,64 @@
+.bg-img {
+    
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/286/1013/130/simple-background-blue-gradient-wallpaper-preview.jpg");
+  
+
+    min-height: 1000px;
+  
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    left: 0;
+    margin: 20px;
+    max-width: 500px;
+    
+    padding: 10px;
+    background-color: white;
+  }
+  
+  
+    input[type=text], input[type=password] {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  .fcc-btn {
+    
+    background-color: #9c1e2f;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    align-content: end;
+    
+  }
+  
+  

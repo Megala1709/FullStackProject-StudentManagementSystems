@@ -1,0 +1,48 @@
+<div class="bg-img">
+<div class="col-md-6 offset-md-3">
+    <h3> Add New  Student  Details <img src="https://thumbs.dreamstime.com/b/student-icon-vector-graduation-mortar-board-school-college-university-glyph-pictogram-male-person-profile-avatar-108392101.jpg" class="rounded" width="45" height="45"></h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <label> <b>StudentName</b></label><br>
+            <input type="text" class ="form-control-sm"  placeholder="Enter Student Name" id = "studentName" 
+                [(ngModel)] = "student.studentName"name = "StudentName" >
+        </div>
+
+        <div class="form-group">
+            <label> <b>Id</b></label><br>
+            <input type="text" class ="form-control-sm" id = "id"
+                [(ngModel)] = "student.id" placeholder="Enter Student Id"name = "id">
+        </div>
+
+        <div class="form-group">
+            <label> <b>Standard</b></label><br>
+            <input type="text" class ="form-control-sm" id = "standard"
+                [(ngModel)] = "student.standard"placeholder="Enter Student Standard" name = "Standard">
+        </div>
+        <div class="form-group">
+            <label><b> DOB</b></label><br>
+            <input type="text" class ="form-control-sm" id = "dob"
+                [(ngModel)] = "student.dob"placeholder="Enter Student DOB" name = "dob">
+        </div>
+        <div class="form-group">
+            <label> <b>ParentName</b></label><br>
+            <input type="text" class ="form-control-sm" id = "parentName"
+                [(ngModel)] = "student.parentName" placeholder="Enter ParentName" name = "parentName">
+        </div>
+        <div class="form-group">
+            <label> <b>ParentPhoneNo</b></label><br>
+            <input type="text" class ="form-control-sm" id = "parentPhoneNo"
+                [(ngModel)] = "student.parentPhoneNo" placeholder="Enter ParentPhoneNo"  name = "parentPhoneNo">
+        </div>
+        <div class="form-group">
+            <label><b>Student Attendence</b></label><br>
+            <input type="text" class ="form-control-sm" id = "stdAtd"
+                [(ngModel)] = "student.stdAttendence" placeholder="Enter StudentAttendence"  name = "StdAtd">
+        </div>
+
+         <button  class = "btn btn-success" type ="submit">Submit</button>
+          
+    </form>
+    </div> 
+    </div>

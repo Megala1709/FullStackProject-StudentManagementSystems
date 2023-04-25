@@ -1,0 +1,27 @@
+.bg-img {
+    
+    background-image: url("https://media.istockphoto.com/id/1165486680/photo/education-concept-school-supplies-in-a-shopping-cart-on-the-desk-in-the-auditorium-blackboard.jpg?s=612x612&w=0&k=20&c=Jp_vf0H8pxkQha5_J3XEJSs1YsEiv5cTXbDUr14rOKg=");
+  
+
+    min-height: 600px;
+  
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .fcc-btn {
+    
+    background-color: #07723c;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    float: right;
+    
+  }
+  .row{
+    float:center;
+  }

@@ -1,0 +1,23 @@
+<div class="bg-img">
+  <div class="text-center">
+    <img src="https://i.ytimg.com/vi/VZgnPcMeLf4/sddefault.jpg" class="rounded" width="65" height="65"> 
+  <h1 style="text-align: center; font-style: normal;"> ABC SCHOOL</h1></div>
+  <form action="/action_page.php" class="container">
+    <fieldset>
+    <legend><b>Login</b></legend>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-DjoQ3H0LFCWXLurl6qeHzGnbox2_cJTAmg&usqp=CAU" class="rounded" width="20" height="20"> 
+    <img >
+    <label for="email"><b>UserName</b></label>
+    <input type="text" name="username" required  [(ngModel)]="username"  >
+    <p id="errormsg" style=color:red;  >{{errorname}}</p>
+    <img src="https://icons.veryicon.com/png/o/internet--web/sesame-treasure/login-password-3.png" class="rounded" width="20" height="20"> 
+    <label for="psw"><b>Password</b></label>
+    <input type="password" name="psw" required  [(ngModel)]="password"  >
+    <p  id="errormsg" style=color:red;>{{errorpassword}}</p>
+    <button (click)=checkLogin() class="btn btn-success">Login</button><br>
+    <p class="Para">    Don't have an accunt? SignUp </p>
+    <a class="fcc-btn" href="/signup">SignUp</a>  
+    </fieldset>
+  </form>
+</div>
+
